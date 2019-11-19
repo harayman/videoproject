@@ -13,6 +13,17 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        flavorDimensions "versionCode"
+    }
+    productFlavors {
+        pad {
+            applicationId "com.custom.videoproject"
+            versionName "retail_pad"
+        }
+        phone {
+            applicationId "com.custom.videoproject"
+            versionName "retail_phone"
+        }
     }
     buildTypes {
         release {
